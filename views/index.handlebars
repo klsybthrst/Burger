@@ -1,0 +1,62 @@
+<div class="container" style="background-color: #FFCD98;">
+
+<div class="jumbotron" style="text-align: center; background-color: #EE851C">
+  <h1 class="display-4">Eat-Da-Burgers!</h1>
+  <p class="lead">Get delicious, yummy, extra goody burgers here!</p>
+  <hr class="my-4">
+  <img src="/assets/img/burger.png" alt="burger" style="width: 80px;">
+</div>
+
+<div class="row">
+  <div class="col-sm" style="text-align: left;">
+    <h2 style="background-color: #FFDD42;">Eat'em Up!</h2>
+
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burgers-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="col-sm" style="text-align: right;">
+    <h2 style="background-color: #FFDD42;">All gone!</h2>
+
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burgers-block devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<div class="row justify-content-center" style="background-color: #EA0802;">
+  <h2>Add a Burger</h2>
+</div>
+
+<div class="row  justify-content-center" style="background-color: #792B1C;">  
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca" style="color: #FFCD98;">Burger Name:</label>
+      <input type="text" id="ca" name="burger_name">
+    </div>
+
+    <div class="form-group">
+      <label for="devoured" style="color: #FFCD98;">Devoured?</label><br>
+      <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+      <input type="radio" name="devoured" value="0"> Available
+    </div>
+
+    <button type="submit">Add Burger</button>
+  </form>
+</div>
+
+<div class="row  justify-content-center" style="background-color: #EE851C;">
+  <h4>Please come again!</h4>
+</div>
+
+</div>
