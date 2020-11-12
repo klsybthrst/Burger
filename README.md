@@ -14,12 +14,17 @@
 
 # Link to Deployed Application
 
-<a href="">Eat-Da-Burger</a>
+<a href="https://still-shelf-73899.herokuapp.com/">Eat-Da-Burger</a>
 
 # Screenshots
+
+<img src="https://user-images.githubusercontent.com/70531552/99008133-94716d80-2513-11eb-9b61-2c8eb9ec89f1.png" alt="Screenshot burger app" width="300" height="400">
+
+# Roadmap
+<p>In the future, I would like to spend more time styling this application. Also, pushing the application to Heroku with a MySQL database was challenging for me. I would like to become more comfortable with this in the future. 
 
 # Contact
 
 <p>Feel free to contact me through my github account if you have any questions!<p/>
-<a href="https://github.com/klsybthrst">Github Account</a>
+<a href="https://github.com/klsybthrst">klsybthrst</a>
   
